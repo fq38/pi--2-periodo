@@ -1,0 +1,20 @@
+<h2>Editando cliente tabela 2 com ID {{idCliente}}</h2>
+<form action="/ediReqCliente/{{idCliente}}" method="post">
+   
+    <div class="mb-3">
+        <label class="form-label">cliente</label>
+        <input class="form-control" type="text" name="cliente" value="{{pcCliente}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">email</label>
+        <input class="form-control" type="text" name="email" value="{{pcEmail}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">cpf</label>
+        <input class="form-control" type="text" name="cpf" value="{{pcCpf}}">
+    </div>
+    
+  
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <button type="submit" class="btn btn-primary">Voltar</button>
+</form>

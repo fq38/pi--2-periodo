@@ -1,0 +1,67 @@
+<div><a href="/cadastrar/produto"><button type="button" class="btn btn-success">Cadastrar produto</button></a></div>
+
+
+
+
+
+
+<!--<a href="/cadastrar"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.854 10.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+</svg></a>-->
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">produto</th>
+            <th scope="col">descricao</th>
+            <th scope="col">valor</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each produtores}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{produto}}</td>
+            <td>{{descricao}}</td>
+            <td>{{valor}}</td>
+            
+            <td>
+                <a href="/editar/produto/{{id}}"><button type="submit" class="btn btn-warning">Editar</button></a>
+                <a href="/remover/{{id}}"><button type="submit" class="btn btn-danger">Apagar</button></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+
+ <div><a href="/cadastrarCliente"><button type="button" class="btn btn-success">Cadastrar cliente</button></a></div>
+
+ <table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">cliente</th>
+            <th scope="col">email</th>
+            <th scope="col">cpf</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each clientes}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{cliente}}</td>
+            <td>{{email}}</td>
+            <td>{{cpf}}</td>
+            
+            <td>
+                <a href="/editar/cliente/{{id}}"><button type="submit" class="btn btn-warning">Editar</button></a>
+                <a href="/removerCliente/{{id}}"><button type="submit" class="btn btn-danger">Apagar</button></a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

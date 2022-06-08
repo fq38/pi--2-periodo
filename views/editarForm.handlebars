@@ -1,0 +1,19 @@
+<h2>Editando produto tabela 1 com ID {{idProduto}}</h2>
+<form action="/ediReqProduto/{{idProduto}}" method="post">
+   
+    <div class="mb-3">
+        <label class="form-label">produto</label>
+        <input class="form-control" type="text" name="produto" value="{{pcProduto}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">descricao</label>
+        <input class="form-control" type="text" name="descricao" value="{{pcDescricao}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">valor</label>
+        <input class="form-control" type="text" name="valor" value="{{pcValor}}">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+    <button type="submit" class="btn btn-primary">Voltar</button>
+</form>
