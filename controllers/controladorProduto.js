@@ -175,7 +175,7 @@ controladorProduto.montarReqDelete = function (req, res) {
     {
         
         proxy:{
-            host: "localhost",
+            host: "44.201.251.72",
             port: 3000
         }
     }).then(function () {

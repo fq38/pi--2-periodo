@@ -1,9 +1,9 @@
 const sequelize = require("sequelize");
 
-const conexao = new  sequelize ("produtos", "root", "123456",{
-host: 'localhost',
-dialect: 'mysql'
-})
+const conexao = new  sequelize ("progweb", "root", "12345678",{
+    host: 'progweb.celoe2bos7lb.us-east-1.rds.amazonaws.com',
+    dialect: 'mysql'
+    })
 
 conexao.authenticate().then(
     function(){
