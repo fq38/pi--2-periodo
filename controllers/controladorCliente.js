@@ -139,7 +139,7 @@ clienteControlador.montarReqEdicaoCliente = function (req, res) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             proxy:{
-                host: "44.201.251.72",
+                host: "184.73.97.150",
                 port: 3000
             }
         }
@@ -158,7 +158,7 @@ clienteControlador.montarReqDelete = function (req, res) {
     {
         
         proxy:{
-            host: "44.201.251.72",
+            host: "184.73.97.150",
             port: 3000
         }
     }).then(function () {
