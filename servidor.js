@@ -8,7 +8,7 @@ var rotasCliente = require("./routes/rotasCliente")
 
 
 var servidor = express()
-const PORTA = 3000
+const PORTA = 8080
 
 servidor.engine("handlebars", handlebars.engine({defaultLayout:"main"}));
 servidor.set("view engine","handlebars");
